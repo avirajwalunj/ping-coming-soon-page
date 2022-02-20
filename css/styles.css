@@ -1,0 +1,157 @@
+:root{
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+.main-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  margin: 0 auto;
+}
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+h1{
+  padding-top: 15px;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--Gray);
+  margin-bottom: 6px;
+}
+p{
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.soon{
+  color: var(--Very-Dark-Blue)
+}
+.input-field{
+  width: 25rem;
+  height: 35px;
+  border-radius: 2rem;
+  padding: 5px 25px 5px 30px;
+  margin-right: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1 solid ;
+  color: var(--Gray);
+  opacity: 0.6;
+  /* position: relative; */
+}
+.btn {
+  cursor: pointer;
+  -webkit-border-radius: 56;
+  -moz-border-radius: 56;
+  border-radius: 56px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  background: var(--Blue);
+  padding: 15px 50px 15px 50px;
+  text-decoration: none;
+  border: 0 solid;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.input-field-main{
+  /* padding-bottom:0.5rem; */
+}
+
+.main-img{
+  padding-top: 4.5rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.fa-brands{
+  color: var(--Blue);
+  padding-right:44px;
+  font-size: 1rem;
+}
+.scial-media-icons{
+  padding-top: 40.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright{
+  font-size: 10px;
+  color: var(--Gray);
+}
+.fa-instagram{
+  padding-right: 5px;
+}
+.styled-unvalid-statements{
+  color: var(--Light-Red);
+  padding-right: 56px;
+  position: absolute;
+  left:1px;
+}
+.not-valid{
+  display:none ;
+  align-self: center;
+  padding-right: 56px;
+  /* padding-bottom: 4rem; */
+}
+.wrong-email{
+  display:none ;
+  align-self: center;
+  /* padding-bottom: 4rem; */
+}
+.right-email{
+  display:none ;
+  color: green;
+  align-self: center;
+  /* padding-bottom: 4rem; */
+}
+
+@media only screen and (max-width:698px){
+  h1{
+    font-size: 2.5rem;
+  }
+  .input-field{
+    width:42%;
+  }
+  .main-img{
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width:532px){
+.main-card{
+  padding-top: 2rem;
+}
+  h1{
+    font-size: 2rem;
+  }
+  .input-field-main{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding-bottom: 1.5rem;
+
+  }
+  .input-field{
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 12px;
+    margin-top: 1rem;
+  }
+  .btn{
+    width: 100%;
+    max-width: 480px;
+    margin: 0;
+  }
+  .scial-media-icons{
+    padding-top: 15.5%;}
+}
